@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <map>
+#include <vector>
+#include <set>
+using namespace std;
+
+void PrintSet(const set<string>& s) {
+    for (auto x : s) {
+        cout << x << endl;
+    }
+}
+int main() {
+    set<string> famous_persons;
+famous_persons.insert("Stroustrups");
+famous_persons.insert("Ritchie");
+PrintSet(famous_persons);
+    return 0;
+}
